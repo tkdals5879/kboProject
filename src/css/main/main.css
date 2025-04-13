@@ -1,0 +1,25 @@
+.mainWrap {
+  width: 100%;
+  padding: 5rem 0;
+}
+.mainWrap section {
+  padding: 0 1rem 1rem 1rem;
+}
+.mainWrap section h2 {
+  margin-bottom: 2rem;
+  font-size: 32px;
+}
+.mainWrap section .clubWrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.mainWrap section .clubWrap > div {
+  padding: 1rem;
+  align-content: center;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */
