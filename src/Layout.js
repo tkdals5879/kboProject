@@ -13,6 +13,9 @@ function Layout() {
 
   const gotoHome = () => {
     navigate ('/')
+    window.scrollTo({
+      top : 0
+    })
   }
 
   return (

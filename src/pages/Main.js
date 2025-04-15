@@ -1,29 +1,42 @@
 import React from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { toggleFavorite } from '../redux/slice/teamsSlice'
+
 import '../css/main/main.css'
 
 
+
 function Main() {
+
+  const dispatch = useDispatch()
+  const teams = useSelector((state) => state.teams.teams)
+
+  const favToogle = (teamId) => {
+    dispatch(toggleFavorite(teamId))
+  }
+
   return (
     <div className='mainWrap'>
 
-        <section>
-            <h2>KBO 구단</h2>
-            <div className='clubWrap'>
-              <div><img src="./lgLogo.svg" alt="lgLogo" /></div>
-              <div><img src="./samsungLogo.svg" alt="samsungLogo" /></div>
-              <div><img src="./kiaLogo.svg" alt="kiaLogo" /></div>
-              <div><img src="./doosanLogo.svg" alt="doosanLogo" /></div>
-              <div><img src="./ktLogo.svg" alt="ktLogo" /></div>
-              <div><img src="./ssgLogo.svg" alt="ssgLogo" /></div>
-              <div><img src="./lotteLogo.svg" alt="lotteLogo" /></div>
-              <div><img src="./kiwoomLogo.svg" alt="kiwoomLogo" /></div>
-              <div><img src="./hanhwaLogo.svg" alt="hanhwaLogo" /></div>
-              <div><img src="./ncLogo.svg" alt="ncLogo" /></div>
+      <section>
+        <h2>KBO 구단</h2>
+
+        <div className='clubWrap'>
+          {teams.map(team => (
+            <div key={team.id}>
+              <img src={team.logo} alt={team.name + 'logo'} />
+              <button className='favorite' onClick={() => favToogle(team.id)}><FontAwesomeIcon icon={faStar} className={team.isFavorite ? 'fav' : ''} /></button>
             </div>
-        </section>
+          ))}
+        </div>
+      </section>
 
     </div>
   )
 }
 
 export default Main;
+
+// 리덕스 툴킷으로 바꿔야함. 리덕스 툴킷 마스터하고 오자.

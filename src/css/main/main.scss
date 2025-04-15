@@ -17,6 +17,19 @@
                 border: 1px solid #ccc;
                 background-color: #eee;
                 border-radius: 10px;
+                position: relative;
+                .favorite{
+                    position: absolute;
+                    top: 4px;
+                    right: 4px;
+                    color: #ccc;
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+                    .fav{
+                        color: gold;
+                    }
+                }
             }
         }
     }
