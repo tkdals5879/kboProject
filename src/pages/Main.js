@@ -26,7 +26,7 @@ function Main() {
         <div className='clubWrap'>
           {teams.map(team => (
             <div key={team.id}>
-              <img src={team.logo} alt={team.name + 'logo'} />
+              <img src={`.${team.logo}`} alt={team.name + 'logo'} />
               <button className='favorite' onClick={() => favToogle(team.id)}><FontAwesomeIcon icon={faStar} className={team.isFavorite ? 'fav' : ''} /></button>
             </div>
           ))}

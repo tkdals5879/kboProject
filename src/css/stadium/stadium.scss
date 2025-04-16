@@ -94,6 +94,10 @@
             background-image: url(../../../public/nc-stadium.webp);
             @include backgroundSet();
         }
+        .favorite{
+            box-shadow: 0px 0px 30px goldenrod;
+            color: goldenrod;
+        }
     }
 
 }
