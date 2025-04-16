@@ -34,10 +34,6 @@ function StadiumDetail() {
                 </div>
             </div>
 
-            <div className='location'>
-                
-            </div>
-
         </div>
     )
 }
