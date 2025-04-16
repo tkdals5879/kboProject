@@ -39,13 +39,3 @@ function Stadium() {
 }
 
 export default Stadium;
-
-{/* <div className='stadium lg'>
-  <div className='infoBox'>
-    <div className='stadiumInfo'>
-      <h3>서울 종합운동장</h3>
-      <h4>서울,잠실</h4>
-    </div>
-    <p>홈구단 : LG 트윈스</p>
-  </div>
-</div> */}
