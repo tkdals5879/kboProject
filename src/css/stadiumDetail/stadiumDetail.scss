@@ -1,4 +1,68 @@
-.stadiumDetailWrap{
+.stadiumDetailWrap {
     width: 100%;
-    padding: 5rem 1rem;
+    padding: 5rem 0;
+    position: relative;
+
+    .information {
+        width: 100%;
+        margin-top: 1rem;
+
+        .text {
+            padding: 0 1rem;
+            display: flex;
+            gap: 12px;
+            align-items: end;
+
+            p {
+                color: #ccc;
+                margin-bottom: 6px;
+            }
+        }
+
+        .stadiumPicture {
+            margin-top: .5rem;
+        }
+
+        .homeTeamInfo {
+            margin: 2rem auto;
+            h2{
+                padding-left: 1rem;
+                margin-bottom: .5rem;
+            }
+            >div {
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            padding: 1.5rem 1rem;
+
+
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 24px;
+
+                .homeTeamInfoRight {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    span{
+                        margin-left: auto;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .location {
+        width: 100%;
+        height: 400px;
+        h2{
+            padding-left: 1rem;
+            margin-bottom: .5rem;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%
+        }
+    }
 }

@@ -1,6 +1,59 @@
 .stadiumDetailWrap {
   width: 100%;
-  padding: 5rem 1rem;
+  padding: 5rem 0;
+  position: relative;
+}
+.stadiumDetailWrap .information {
+  width: 100%;
+  margin-top: 1rem;
+}
+.stadiumDetailWrap .information .text {
+  padding: 0 1rem;
+  display: flex;
+  gap: 12px;
+  align-items: end;
+}
+.stadiumDetailWrap .information .text p {
+  color: #ccc;
+  margin-bottom: 6px;
+}
+.stadiumDetailWrap .information .stadiumPicture {
+  margin-top: 0.5rem;
+}
+.stadiumDetailWrap .information .homeTeamInfo {
+  margin: 2rem auto;
+}
+.stadiumDetailWrap .information .homeTeamInfo h2 {
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+.stadiumDetailWrap .information .homeTeamInfo > div {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 1.5rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 24px;
+}
+.stadiumDetailWrap .information .homeTeamInfo > div .homeTeamInfoRight {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.stadiumDetailWrap .information .homeTeamInfo > div .homeTeamInfoRight span {
+  margin-left: auto;
+}
+.stadiumDetailWrap .location {
+  width: 100%;
+  height: 400px;
+}
+.stadiumDetailWrap .location h2 {
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+.stadiumDetailWrap .location iframe {
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=stadiumDetail.css.map */
