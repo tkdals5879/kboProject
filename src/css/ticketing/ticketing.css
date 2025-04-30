@@ -1,0 +1,30 @@
+.ticketingWrap {
+  padding: 5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.ticketingWrap h2 {
+  margin-bottom: 2rem;
+}
+.ticketingWrap .linkWrap {
+  width: 100%;
+  height: 165px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+}
+.ticketingWrap .linkWrap > div {
+  background-color: #333;
+  width: 100%;
+  height: 80%;
+}
+.ticketingWrap .linkWrap > div a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=ticketing.css.map */

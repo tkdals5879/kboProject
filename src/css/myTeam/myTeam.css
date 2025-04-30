@@ -1,0 +1,79 @@
+.myTeamWrap {
+  padding: 5rem 1rem;
+}
+.myTeamWrap .myTeamDisplay {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.myTeamWrap .myTeamDisplay .myTeamInfoA {
+  margin-top: 3rem;
+}
+.myTeamWrap .myTeamDisplay .myTeamInfoA img {
+  width: 70%;
+  margin: auto;
+}
+.myTeamWrap .myTeamDisplay .myTeamInfoA h3 {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+.myTeamWrap .myTeamDisplay .myTeamInfoB {
+  width: 100%;
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+}
+.myTeamWrap .myTeamDisplay .myTeamInfoB > div {
+  width: fit-content;
+  height: 100%;
+  margin: auto;
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+}
+.myTeamWrap .myTeamDisplay .myTeamInfoB > div .myTeamInfoBLeft {
+  width: 40px;
+  background-color: #eee;
+  border-radius: 50px 10px 10px 50px;
+}
+.myTeamWrap .myTeamDisplay .myTeamInfoB > div .myTeamInfoBCenter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.myTeamWrap .myTeamDisplay .myTeamInfoB > div .myTeamInfoBCenter p {
+  font-size: 4vw;
+}
+.myTeamWrap .myTeamDisplay .myTeamInfoB > div .myTeamInfoBCenter p > span {
+  color: #ccc;
+}
+.myTeamWrap .myTeamDisplay .myTeamInfoB > div .myTeamInfoBRight {
+  width: 40px;
+  background-color: #eee;
+  border-radius: 10px 50px 50px 10px;
+}
+.myTeamWrap .playerListWrap {
+  margin: 5rem 0;
+}
+.myTeamWrap .playerListWrap h2 {
+  margin-bottom: 1rem;
+}
+.myTeamWrap .playerListWrap .playerBox {
+  display: flex;
+  gap: 12px;
+  padding-bottom: 1rem;
+}
+.myTeamWrap .playerListWrap .playerBox figure {
+  max-width: 30%;
+  height: 100%;
+  overflow: hidden;
+}
+.myTeamWrap .playerListWrap .playerBox > div {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/*# sourceMappingURL=myTeam.css.map */
