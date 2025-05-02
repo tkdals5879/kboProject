@@ -22,7 +22,16 @@ function StadiumDetail() {
         setModalOpen(false)
     }
 
-    useEffect(() => { console.log("모달 상태 > ", modalOpen) }, [modalOpen])
+    useEffect(() => { console.log("모달 상태 > ", modalOpen);
+        if(modalOpen){
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
+        return () => {
+            document.body.style.overflow = "auto";
+        }
+     }, [modalOpen])
 
     if (!clickedTeam) return <p>팀을 찾을 수 없습니다!</p>
 

@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import ScheduleModal from '../component/ScheduleModal'
 
 import '../css/schedule/schedule.css'
 
 function Schedule() {
 
-  const [modalOpen,setModalOpen] = useState(false)
+  const [modalOpen, setModalOpen] = useState(false)
 
   const handleModalOpen = () => {
     setModalOpen(true)
@@ -14,6 +14,18 @@ function Schedule() {
   const handleModalClose = () => {
     setModalOpen(false)
   }
+
+  useEffect(() => {
+    console.log("모달 상태 > ", modalOpen);
+    if (modalOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    }
+  }, [modalOpen])
 
   return (
     <div className='scheduleWrap'>
@@ -55,7 +67,7 @@ function Schedule() {
         </div>
       </div>
 
-      {modalOpen && (<ScheduleModal handleModalClose={handleModalClose}/>)}
+      {modalOpen && (<ScheduleModal handleModalClose={handleModalClose} />)}
 
     </div>
   )

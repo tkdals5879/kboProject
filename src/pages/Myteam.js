@@ -36,23 +36,17 @@ function Myteam() {
             <h3>{favTeam.homeTeam}</h3>
           </div>
           <div className='myTeamInfoB'>
+
             <div>
-
-              <div className='myTeamInfoBLeft'></div>
-
-              <div className='myTeamInfoBCenter'>
-                <p>현재 랭킹 : {favTeamRank.ranking}위</p>
-                <p>경기전적 : {favTeamRank.win}승{favTeamRank.draw}무{favTeamRank.lose}패 </p>
-                <p>승률 : {favTeamRank.winPercent}</p>
-                <p>최근 10G : {favTeamRank.recent10Game}</p>
-                <p>연속 : {favTeamRank.winStraight}</p>
-                <p>홈 경기전적: {favTeamRank.homeMatchResult} <span>(승,무,패)</span></p>
-                <p>원정 경기전적 : {favTeamRank.awayMatchResult} <span>(승,무,패)</span></p>
-              </div>
-
-              <div className='myTeamInfoBRight'></div>
-
+              <p>현재 랭킹 : {favTeamRank.ranking}위</p>
+              <p>경기전적 : {favTeamRank.win}승{favTeamRank.draw}무{favTeamRank.lose}패 </p>
+              <p>승률 : {favTeamRank.winPercent}</p>
+              <p>최근 10G : {favTeamRank.recent10Game}</p>
+              <p>연속 : {favTeamRank.winStraight}</p>
+              <p>홈 경기전적: {favTeamRank.homeMatchResult} <span>(승,무,패)</span></p>
+              <p>원정 경기전적 : {favTeamRank.awayMatchResult} <span>(승,무,패)</span></p>
             </div>
+
           </div>
 
         </div>
@@ -166,13 +160,24 @@ function Myteam() {
             </div>
           </SwiperSlide>
         </Swiper>
+        <button>더보기</button>
       </div>
 
       <div className='matchScheduleWrap'>
         <h2>경기 일정</h2>
         <div className='matchScheduleBox'>
-          <div className='matchScheduleLeft'></div>
-          <div className='matchScheduleRight'></div>
+          <div className='matchScheduleBoxMobile'>
+            <div className='matchScheduleLeft'>
+              <h3>04월</h3>
+            </div>
+            <div className='matchScheduleRight'>
+              {/* 달력디자인해서 해당 요일 누르면 모달창 뜨도록 디자인하기. */}
+            </div>
+          </div>
+          <div className='matchScheduleBoxPc'>
+            <div className='matchScheduleLeft'></div>
+            <div className='matchScheduleRight'></div>
+          </div>
         </div>
       </div>
 
